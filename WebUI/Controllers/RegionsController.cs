@@ -17,7 +17,9 @@ namespace WebUI.Controllers
         // GET: Regions
         public ActionResult Index()
         {
-            return View(db.Regions.ToList());
+	        ViewBag.Message = "Regions";
+
+						return View(db.Regions.ToList());
         }
 
         // GET: Regions/Details/5
